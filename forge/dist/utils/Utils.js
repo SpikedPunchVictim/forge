@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.safelyRun = exports.isDefined = void 0;
+/**
+ * Determines if a value is not undefined or null
+ *
+ * @param value The value to check
+ */
+function isDefined(value) {
+    return value !== undefined && value !== null;
+}
+exports.isDefined = isDefined;
+/**
+ * Safely runs a function by determining if the function is valid.
+ * @param fn The function to run
+ * @param args The function parameters
+ */
+async function safelyRun(fn, ...args) {
+    return fn ? fn(...args) : Promise.resolve(undefined);
+}
+exports.safelyRun = safelyRun;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvdXRpbHMvVXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7Ozs7R0FJRztBQUNILFNBQWdCLFNBQVMsQ0FBSSxLQUEyQjtJQUN0RCxPQUFVLEtBQUssS0FBSyxTQUFTLElBQU8sS0FBSyxLQUFLLElBQUksQ0FBQztBQUNyRCxDQUFDO0FBRkQsOEJBRUM7QUFFRDs7OztHQUlHO0FBQ0ksS0FBSyxVQUFVLFNBQVMsQ0FBVSxFQUFPLEVBQUUsR0FBRyxJQUFnQjtJQUNuRSxPQUFPLEVBQUUsQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUFDLEdBQUcsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLENBQUE7QUFDdEQsQ0FBQztBQUZELDhCQUVDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBEZXRlcm1pbmVzIGlmIGEgdmFsdWUgaXMgbm90IHVuZGVmaW5lZCBvciBudWxsXG4gKiBcbiAqIEBwYXJhbSB2YWx1ZSBUaGUgdmFsdWUgdG8gY2hlY2tcbiAqL1xuZXhwb3J0IGZ1bmN0aW9uIGlzRGVmaW5lZDxUPih2YWx1ZTogVCB8IHVuZGVmaW5lZCB8IG51bGwpOiB2YWx1ZSBpcyBUIHtcbiAgcmV0dXJuIDxUPnZhbHVlICE9PSB1bmRlZmluZWQgJiYgPFQ+dmFsdWUgIT09IG51bGw7XG59XG5cbi8qKlxuICogU2FmZWx5IHJ1bnMgYSBmdW5jdGlvbiBieSBkZXRlcm1pbmluZyBpZiB0aGUgZnVuY3Rpb24gaXMgdmFsaWQuXG4gKiBAcGFyYW0gZm4gVGhlIGZ1bmN0aW9uIHRvIHJ1blxuICogQHBhcmFtIGFyZ3MgVGhlIGZ1bmN0aW9uIHBhcmFtZXRlcnNcbiAqL1xuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHNhZmVseVJ1bjxUUmVzdWx0PihmbjogYW55LCAuLi5hcmdzOiBBcnJheTxhbnk+KTogUHJvbWlzZTxUUmVzdWx0IHwgdW5kZWZpbmVkPiB7XG4gIHJldHVybiBmbiA/IGZuKC4uLmFyZ3MpIDogUHJvbWlzZS5yZXNvbHZlKHVuZGVmaW5lZClcbn0iXX0=

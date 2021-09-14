@@ -1,0 +1,41 @@
+{
+  "name": "@spikedpunch/forge",
+  "entries": [
+    {
+      "version": "0.1.2",
+      "tag": "@spikedpunch/forge_v0.1.2",
+      "date": "Sun, 28 Mar 2021 05:42:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Added better usage example in docs, added object option to :fn plugin"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.1",
+      "tag": "@spikedpunch/forge_v0.1.1",
+      "date": "Sat, 27 Mar 2021 18:30:59 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Replaced forge:<plugin> format with :<plugin> for succintness"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.0",
+      "tag": "@spikedpunch/forge_v0.1.0",
+      "date": "Tue, 12 Jan 2021 05:28:36 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "First publish"
+          }
+        ]
+      }
+    }
+  ]
+}

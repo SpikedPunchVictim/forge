@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.StreamTraitContainer = exports.Trait = void 0;
+/*
+   Stream Traits allow developers to add functionality
+   to their streams that require knowledge of the whole
+   Pipeline. For example, if a Stream (or a Step) references
+   other streams in the Pipeline, they can add a Trait
+   to get those references and pipe
+
+*/
+var Trait;
+(function (Trait) {
+    Trait["InternalStrams"] = "trait-internal-streams";
+})(Trait = exports.Trait || (exports.Trait = {}));
+class StreamTraitContainer {
+    static hasTraits(other) {
+        //@ts-ignore      
+        return other != null && other.setTraits != null && (typeof other.setTraits === 'function');
+    }
+}
+exports.StreamTraitContainer = StreamTraitContainer;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RyZWFtVHJhaXQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvdHJhaXRzL1N0cmVhbVRyYWl0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUdBOzs7Ozs7O0VBT0U7QUFFRixJQUFZLEtBRVg7QUFGRCxXQUFZLEtBQUs7SUFDZCxrREFBeUMsQ0FBQTtBQUM1QyxDQUFDLEVBRlcsS0FBSyxHQUFMLGFBQUssS0FBTCxhQUFLLFFBRWhCO0FBV0QsTUFBc0Isb0JBQW9CO0lBQ3ZDLE1BQU0sQ0FBQyxTQUFTLENBQUMsS0FBa0Q7UUFDaEUsa0JBQWtCO1FBQ2xCLE9BQU8sS0FBSyxJQUFJLElBQUksSUFBSSxLQUFLLENBQUMsU0FBUyxJQUFJLElBQUksSUFBSSxDQUFDLE9BQU8sS0FBSyxDQUFDLFNBQVMsS0FBSyxVQUFVLENBQUMsQ0FBQTtJQUM3RixDQUFDO0NBQ0g7QUFMRCxvREFLQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFJlYWRhYmxlLCBXcml0YWJsZSwgVHJhbnNmb3JtIH0gZnJvbSAncmVhZGFibGUtc3RyZWFtJ1xuaW1wb3J0IHsgSVBpcGVsaW5lIH0gZnJvbSAnLi4vY29yZS9QaXBlbGluZSdcblxuLypcbiAgIFN0cmVhbSBUcmFpdHMgYWxsb3cgZGV2ZWxvcGVycyB0byBhZGQgZnVuY3Rpb25hbGl0eVxuICAgdG8gdGhlaXIgc3RyZWFtcyB0aGF0IHJlcXVpcmUga25vd2xlZGdlIG9mIHRoZSB3aG9sZVxuICAgUGlwZWxpbmUuIEZvciBleGFtcGxlLCBpZiBhIFN0cmVhbSAob3IgYSBTdGVwKSByZWZlcmVuY2VzXG4gICBvdGhlciBzdHJlYW1zIGluIHRoZSBQaXBlbGluZSwgdGhleSBjYW4gYWRkIGEgVHJhaXRcbiAgIHRvIGdldCB0aG9zZSByZWZlcmVuY2VzIGFuZCBwaXBlXG5cbiovXG5cbmV4cG9ydCBlbnVtIFRyYWl0IHtcbiAgIEludGVybmFsU3RyYW1zID0gJ3RyYWl0LWludGVybmFsLXN0cmVhbXMnIFxufVxuXG5leHBvcnQgaW50ZXJmYWNlIElTdHJlYW1UcmFpdCB7XG4gICByZWFkb25seSB0eXBlOiBTdHJpbmdcbiAgIGFwcGx5KHBpcGVsaW5lOiBJUGlwZWxpbmUpOiBQcm9taXNlPHZvaWQ+XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgSVN0cmVhbVRyYWl0Q29udGFpbmVyIHtcbiAgIHNldFRyYWl0cyh0cmFpdHM6IElTdHJlYW1UcmFpdFtdKTogUHJvbWlzZTx2b2lkPlxufVxuXG5leHBvcnQgYWJzdHJhY3QgY2xhc3MgU3RyZWFtVHJhaXRDb250YWluZXIge1xuICAgc3RhdGljIGhhc1RyYWl0cyhvdGhlcjogUmVhZGFibGUgfCBXcml0YWJsZSB8IFRyYW5zZm9ybSB8IHVuZGVmaW5lZCk6IGJvb2xlYW4ge1xuICAgICAgLy9AdHMtaWdub3JlICAgICAgXG4gICAgICByZXR1cm4gb3RoZXIgIT0gbnVsbCAmJiBvdGhlci5zZXRUcmFpdHMgIT0gbnVsbCAmJiAodHlwZW9mIG90aGVyLnNldFRyYWl0cyA9PT0gJ2Z1bmN0aW9uJylcbiAgIH1cbn1cbiJdfQ==

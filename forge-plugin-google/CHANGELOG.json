@@ -1,0 +1,17 @@
+{
+  "name": "@spikedpunch/forge-plugin-google",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@spikedpunch/forge-plugin-google_v1.0.0",
+      "date": "Tue, 12 Jan 2021 05:28:36 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "First publish"
+          }
+        ]
+      }
+    }
+  ]
+}

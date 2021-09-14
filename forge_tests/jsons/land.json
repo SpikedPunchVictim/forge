@@ -1,0 +1,12 @@
+{
+   "beasts": [
+      {
+         "name": "rhino",
+         "strength": 10
+      },
+      {
+         "name": "platypus",
+         "strength": 2
+      }
+   ]
+}

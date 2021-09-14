@@ -1,0 +1,14 @@
+dependencies:
+  '@spikedpunch/forge-plugin-s3': 'link:../forge-plugin-s3'
+  dotenv: 8.2.0
+lockfileVersion: 5.2
+packages:
+  /dotenv/8.2.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+specifiers:
+  '@spikedpunch/forge-plugin-s3': 'link:../forge-plugin-s3'
+  dotenv: ^8.2.0

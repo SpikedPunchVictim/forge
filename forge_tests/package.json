@@ -1,0 +1,23 @@
+{
+  "name": "@spikedpunch/forge_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "forge.js",
+  "dependencies": {
+    "@spikedpunch/forge": "^0.1.0",
+    "@spikedpunch/forge-plugin-json": "^0.1.0",
+    "@spikedpunch/forge-plugin-rest": "^0.1.0",
+    "@spikedpunch/forge-plugin-s3": "^0.1.0",
+    "@spikedpunch/forge-plugin-swig": "^0.1.0",
+    "dotenv": "^8.2.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "rimraf ./built && forge --file ./forge.js --cwd .",
+    "forge": "forge --file ./forge.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

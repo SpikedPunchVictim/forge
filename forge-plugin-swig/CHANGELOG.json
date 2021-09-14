@@ -1,0 +1,17 @@
+{
+  "name": "@spikedpunch/forge-plugin-swig",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "@spikedpunch/forge-plugin-swig_v0.1.0",
+      "date": "Tue, 12 Jan 2021 05:28:36 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "First publish"
+          }
+        ]
+      }
+    }
+  ]
+}

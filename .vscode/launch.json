@@ -1,0 +1,68 @@
+{
+   // Use IntelliSense to learn about possible attributes.
+   // Hover to view descriptions of existing attributes.
+   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "type": "node",
+         "request": "launch",
+         "name": "tests | npm run forge",
+         "program": "${workspaceFolder}/forge/dist/bin/forge",
+         "args": [
+            "--file", "${workspaceFolder}/forge_tests/forge1.js",
+            "--cwd", "${workspaceFolder}/forge_tests"
+         ],
+         "skipFiles": [
+            "<node_internals>/**"
+         ]
+      },
+      {
+         "type": "node",
+         "request": "launch",
+         "name": "tests | google",
+         "program": "${workspaceFolder}/forge/dist/bin/forge",
+         //"preLaunchTask": "npm: build - forge-plugin-google",
+         "args": [
+            "--file", "${workspaceFolder}/forge-plugin-google/tests/forge.js",
+            "--cwd", "${workspaceFolder}/forge-plugin-google/tests"
+         ],
+         "skipFiles": [
+            "<node_internals>/**"
+         ]
+      },
+      {
+         "name": "TS | Current File",
+         "type": "node",
+         "request": "launch",
+         "args": [
+            "${relativeFile}"
+         ],
+         "runtimeArgs": [
+            "--nolazy",
+            "-r",
+            "ts-node/register"
+         ],
+         "sourceMaps": true,
+         "cwd": "${workspaceRoot}",
+         "protocol": "inspector",
+         "smartStep": true,
+         "skipFiles": [
+            "<node_internals>/**",
+            "node_modules/**"
+         ],
+      },
+      {
+         "type": "node",
+         "request": "launch",
+         "name": "JS | Current File",
+         "smartStep": true,
+         "skipFiles": [
+            "<node_internals>/**",
+            "node_modules/**"
+         ],
+         "program": "${workspaceFolder}/${relativeFile}",
+         "cwd": "${workspaceFolder}"
+      }
+   ]
+}

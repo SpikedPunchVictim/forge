@@ -1,0 +1,11 @@
+{
+   "filename": "three.json",
+   "count": 3,
+   "from": -2,
+   "items": [
+      "Some",
+      "List of",
+      "strings",
+      "part 3"
+   ]
+}
