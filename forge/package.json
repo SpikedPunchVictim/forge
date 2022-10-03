@@ -1,6 +1,6 @@
 {
   "name": "@spikedpunch/forge",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Quickly and easily setup a series of streams to move and transform data",
   "main": "dist/index.js",
   "bin": {
