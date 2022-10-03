@@ -43,8 +43,6 @@ export class SwigTransformStream extends Transform {
       this.cache = undefined
    }
 
-   _
-
    _transform(chunk: any, encoding: string, cb: (error?: Error | null, data?: any) => void): void {
       // TODO: Support multiple use sources
       // To do that, spawn a transform stream for each use, and store their results into a Map

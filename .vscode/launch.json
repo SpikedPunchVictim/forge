@@ -10,7 +10,7 @@
          "name": "tests | npm run forge",
          "program": "${workspaceFolder}/forge/dist/bin/forge",
          "args": [
-            "--file", "${workspaceFolder}/forge_tests/forge1.js",
+            "--file", "${workspaceFolder}/forge_tests/forge.script.js",
             "--cwd", "${workspaceFolder}/forge_tests"
          ],
          "skipFiles": [

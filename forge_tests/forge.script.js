@@ -17,6 +17,17 @@ async function main() {
          }
       ]
    })
+
+
+   await forge.build({
+      steps: [
+         {
+            alias: '/file',
+            plugin: ':rest',
+            verb: 'post'
+         }
+      ]
+   })
 }
 
 main()

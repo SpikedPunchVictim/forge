@@ -15,14 +15,14 @@ import forge from '@spikedpunch/forge'
 await forge.build({
    steps: [
          {
-            alias: 'read',
-            plugin: ':http',
+            alias: 'brewery',    // An arbitrary name for this step
+            plugin: ':http',     // The plugin to use. Forge has built in plugins like :http
             url: 'https://api.openbrewerydb.org/breweries'
          },
          {
-            alias: 'console',
-            use: 'read',
-            plugin: ':fn',
+            alias: 'console',    // This step's name
+            use: 'brewery',      // Read the data from the 'brewery' stream
+            plugin: ':fn',       // Custom plugin to define your stream inline
             fn: async (chunk) => { console.log(JSON.stringify(chunk)) }
          }
    ]
@@ -33,13 +33,20 @@ await forge.build({
 ```js
 // A complete use case
 module.exports = {
-   resolve: [  // A list of relative paths used to resolve file paths
+   resolve: [  // Reference file paths in your config? This property helps resolve those paths
       'relative/path/to/files'
    ],
-   init: async (configAssist) => {
+   init: async (configAssist) => {  
+      // Perform some initialization before running
+      // And collect your environment variables/secrets/etc to use later
       // Return an config object that can be used to create Plugins or configure Steps
    },
    plugins: [
+      // Plugins extend forge's functionality.
+      // They may write to S3, GMail, etc.
+      // forge comes with a set of builtin plugins,
+      // denoted with a ':' as the first letter of
+      // the plugin name.
       { name: 'json', plugin: new JsonPlugin() },
       async (config) => {
          /* 
@@ -52,19 +59,20 @@ module.exports = {
       }
    ],
    pipelines: {
-      // Unique pipeline name
-      xform: {
+      xform: {    // The property name becomes the pipeline name
          resolve: [
-         // These are used to resolve paths only in this pipeline
+            // These are used to resolve paths only in this pipeline
          ],
          steps: [
-            //...
+            // The pipeline's steps
          ]
       }
    }
 }
 
 ```
+
+The Pipelines can become as complex as you need them, with ReadStreams writing to multiple WriteStreams, and throw in some TransformStreams, and you can send your data anywhere and define the steps quickly. `forge` will build a Stream pipeline that will manage backpressure and error handling.
 
 ## Properties
 

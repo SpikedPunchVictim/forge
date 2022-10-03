@@ -5,12 +5,10 @@ dependencies:
   '@rush-temp/forge-plugin-rest': 'file:projects/forge-plugin-rest.tgz'
   '@rush-temp/forge-plugin-s3': 'file:projects/forge-plugin-s3.tgz'
   '@rush-temp/forge-plugin-swig': 'file:projects/forge-plugin-swig.tgz'
-  '@rush-temp/forge_tests': 'file:projects/forge_tests.tgz'
   '@types/fs-extra': 9.0.2
   '@types/swig': 0.0.29
   aws-sdk: 2.791.0
   commander: 6.1.0
-  dotenv: 8.2.0
   globby: 11.0.1
   google-auth-library: 6.1.3
   googleapis: 65.0.0
@@ -409,12 +407,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==
-  /dotenv/8.2.0:
-    dev: false
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /ecdsa-sig-formatter/1.0.11:
     dependencies:
       safe-buffer: 5.2.1
@@ -1436,7 +1428,7 @@ packages:
     dev: false
     name: '@rush-temp/forge-plugin-google'
     resolution:
-      integrity: sha512-aVpGnOMKDLujFB4luAwYqS7eFJdDQFJ18hdOWAFBYJuM/av4h0NPsnnzNztbK34T713OO5GTKNVU6HJgQ9/oHw==
+      integrity: sha512-QQz7sOP5XUrfBUfjw+Zdz80SunBxNt/9Q7nHes98Md7g59uTTxKBUjc6Bfk1ZlqzFrk6u0rwpn0h/48C1SgUAw==
       tarball: 'file:projects/forge-plugin-google.tgz'
     version: 0.0.0
   'file:projects/forge-plugin-json.tgz':
@@ -1452,7 +1444,7 @@ packages:
     dev: false
     name: '@rush-temp/forge-plugin-json'
     resolution:
-      integrity: sha512-tpJ3vHOr43Sq6I3VEtCo/+SDma6t5iF+q2vNF3jCbwNhyWzxOOWwmklhIXnQ1N/4aOslmoPQ647giOiFMwDGlQ==
+      integrity: sha512-87N7DDZC8VExXXvFJA58HFrmlT6aGj406H83uDtmEOZgEc2c/cG0OK2nn0C2wYMFRWltGutD48UUTk+o031XPQ==
       tarball: 'file:projects/forge-plugin-json.tgz'
     version: 0.0.0
   'file:projects/forge-plugin-rest.tgz':
@@ -1469,7 +1461,7 @@ packages:
     dev: false
     name: '@rush-temp/forge-plugin-rest'
     resolution:
-      integrity: sha512-c35ZT7yyBMpEiNLtTDiHoyvvTyoLLG79Oeq2XhGCKDS/mVAv/pZKXhpR/F51COFQWlIKGk8PrOERTIKh0OaOtQ==
+      integrity: sha512-wc3gJb2X0DleSf6ftLax3b57JPHXnxuaIzvUFN9Qhssp2Brv5J2etz2xOq2QSQBB49ktc2FbPEOnDLwXKiBRgA==
       tarball: 'file:projects/forge-plugin-rest.tgz'
     version: 0.0.0
   'file:projects/forge-plugin-s3.tgz':
@@ -1482,7 +1474,7 @@ packages:
     dev: false
     name: '@rush-temp/forge-plugin-s3'
     resolution:
-      integrity: sha512-BQ4wDXyqUy23hEc9Rs99Gp+bywezSMlK8LFiEC2JCVyyw00rbMHUwyhsmU041LvJadgg9KAogOy7nV4MvKjXWw==
+      integrity: sha512-exm9Ag36BTgnygenjesXHrH81AyQz60o/1iYF/dUS37hTMHoIZHUWy2nJXLw39Dk1dvZ9yxdyIw5QyTSIyEHgw==
       tarball: 'file:projects/forge-plugin-s3.tgz'
     version: 0.0.0
   'file:projects/forge-plugin-swig.tgz':
@@ -1500,7 +1492,7 @@ packages:
     dev: false
     name: '@rush-temp/forge-plugin-swig'
     resolution:
-      integrity: sha512-vUqz5BlVVLPSde3pQFEqvd0XNwScYEh0SOXW5uV/ncEisr/yRyTunJlH6ktdHlaM8sRyaeR7f3/Oip9buwVfDg==
+      integrity: sha512-5jWGeVMIl543SaA6luHSmYAJ5fXoDuty7INssRWixUJc4x2esqs4/HG3jcX80sfOBVLaGg/1lqJEcfRz7KVVWg==
       tarball: 'file:projects/forge-plugin-swig.tgz'
     version: 0.0.0
   'file:projects/forge.tgz':
@@ -1523,16 +1515,6 @@ packages:
       integrity: sha512-Vp0F+OeDAnreAFDZspnViHfzWLDBfxLDq/xIMgHSNU9xqrA/uy0L05VZ5opOa4GInANfozzNPHxg2W1u8LbFVA==
       tarball: 'file:projects/forge.tgz'
     version: 0.0.0
-  'file:projects/forge_tests.tgz':
-    dependencies:
-      dotenv: 8.2.0
-      rimraf: 3.0.2
-    dev: false
-    name: '@rush-temp/forge_tests'
-    resolution:
-      integrity: sha512-ipUtGqz5cZ2PLYtVRjuY3ZHh/LwW6qleisIsigS2tXYyVzcElULYkA0p/7N2Jlz+NRYva2ZjYBmivzFVW+S4Xg==
-      tarball: 'file:projects/forge_tests.tgz'
-    version: 0.0.0
 registry: ''
 specifiers:
   '@rush-temp/forge': 'file:./projects/forge.tgz'
@@ -1541,12 +1523,10 @@ specifiers:
   '@rush-temp/forge-plugin-rest': 'file:./projects/forge-plugin-rest.tgz'
   '@rush-temp/forge-plugin-s3': 'file:./projects/forge-plugin-s3.tgz'
   '@rush-temp/forge-plugin-swig': 'file:./projects/forge-plugin-swig.tgz'
-  '@rush-temp/forge_tests': 'file:./projects/forge_tests.tgz'
   '@types/fs-extra': ^9.0.2
   '@types/swig': ^0.0.29
   aws-sdk: ^2.791.0
   commander: ^6.1.0
-  dotenv: ^8.2.0
   globby: ^11.0.1
   google-auth-library: ~6.1.3
   googleapis: ^65.0.0
