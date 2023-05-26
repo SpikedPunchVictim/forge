@@ -35,7 +35,7 @@
     "commander": "^6.1.0",
     "fs-extra": "^9.0.1",
     "globby": "^11.0.1",
-    "readable-stream": "^3.6.0",
+    "readable-stream": "^3.6.2",
     "resolve-dir": "^1.0.1",
     "rimraf": "^3.0.0"
   }
