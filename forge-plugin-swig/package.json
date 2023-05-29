@@ -21,7 +21,7 @@
   "dependencies": {
     "@spikedpunch/forge": "^0.1.2",
     "@types/readable-stream": "^2.3.9",
-    "@types/swig": "^0.0.29",
+    "@types/swig": "^0.0.30",
     "fs-extra": "^9.0.1",
     "readable-stream": "^3.6.0",
     "swig": "^1.4.2",
