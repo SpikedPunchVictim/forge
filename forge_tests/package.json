@@ -4,7 +4,7 @@
   "description": "",
   "main": "forge.js",
   "dependencies": {
-    "@spikedpunch/forge": "^0.1.0",
+    "@spikedpunch/forge": "^0.1.1",
     "@spikedpunch/forge-plugin-json": "^0.1.0",
     "@spikedpunch/forge-plugin-rest": "^0.1.0",
     "@spikedpunch/forge-plugin-s3": "^0.1.0",
