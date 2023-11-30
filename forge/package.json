@@ -37,6 +37,6 @@
     "globby": "^11.0.1",
     "readable-stream": "^3.6.0",
     "resolve-dir": "^1.0.1",
-    "rimraf": "^3.0.0"
+    "rimraf": "^4.0.0"
   }
 }
