@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "googleapis": "^65.0.0",
+    "googleapis": "^124.0.0",
     "readable-stream": "~3.6.0",
     "@types/readable-stream": "~2.3.9",
     "@spikedpunch/forge": "~0.1.2",
